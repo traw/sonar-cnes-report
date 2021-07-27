@@ -9,3 +9,5 @@ target
 classes
 node_modules/
 node/
+/bin/
+.DS_Store

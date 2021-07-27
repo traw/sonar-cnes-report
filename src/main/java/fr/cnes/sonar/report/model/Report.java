@@ -287,7 +287,7 @@ public class Report {
         Language language;
         for(ProfileMetaData q : project.getQualityProfiles()) {
             language = project.getLanguage(q.getLanguage());
-            sb.append(q.getName()).append(" [").append(language.getName()).append("]; ");
+            sb.append(q.getName()).append(" [").append(language != null? language.getName(): q.getLanguage()).append("]; ");
         }
 
         return sb.toString();
